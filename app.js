@@ -5,6 +5,7 @@ const json = require('koa-json')
 const onerror = require('koa-onerror')
 const bodyparser = require('koa-bodyparser')
 const logger = require('koa-logger')
+import path from 'path';
 
 const index = require('./routes/index')
 const users = require('./routes/users')
@@ -21,7 +22,8 @@ app.use(logger())
 app.use(require('koa-static')(__dirname + '/public'))
 
 app.use(views(__dirname + '/views', {
-  extension: 'pug'
+  // extension: 'pug'
+  extension: 'html'
 }))
 
 // logger
