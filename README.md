@@ -19,4 +19,13 @@
  $ nodemon server/index.js
 
 ```
+View on http://localhost:8080/
+
+热加载功能
+``` javascript
+ $ npm install 
+ $ npm run build-dev
+ $ nodemon server/index.js
+```
+这种方式启动后，app.js的任何改动浏览器刷新都会更新了
 
