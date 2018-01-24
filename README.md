@@ -6,7 +6,8 @@
 
 终端输入
 ``` javascript
- $ npm install npm start // 启动 
+ $ npm install 
+ $ npm start // 启动 
 ```
 
 或者在全局安装了webpack 和 nodemon的情况下启动
