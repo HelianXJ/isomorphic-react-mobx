@@ -111,11 +111,11 @@ class TodoList {
         finished: false
     }];
 
-    // constructor () {
-    //     autorun(() => {
-    //         console.log("Tasks left: " + this.todos.unfinishedTodoCount)
-    //     })
-    // }
+    constructor () {
+        autorun(() => {
+            console.log("Tasks left: " + this.unfinishedTodoCount)
+        });
+    }
 
     @computed get unfinishedTodoCount() {
         return this.todos.filter(todo => !todo.finished).length;
