@@ -25,7 +25,7 @@ View on http://localhost:8080/
 ``` javascript
  $ npm install 
  $ npm run build-dev
- $ nodemon server/index.js
+ $ npm run dev // 全局安装nodemon的情况下nodemon server/index.js 也可
 ```
 这种方式启动后，app.js的任何改动浏览器刷新都会更新了
 
